@@ -1,0 +1,3 @@
+name = Whaleocalypse Page Title
+core = 7.x
+description = Fix a bug in the module top_node in which there is no node title on the home page

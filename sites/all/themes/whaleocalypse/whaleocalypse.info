@@ -34,7 +34,7 @@ stylesheets[all][] = css/normalize.css
 stylesheets[print][] = css/print.css
 
 ; Scripts
-scripts[] = js/modernizr.js
+; scripts[] = js/modernizr.js
 
 settings[basic_tabs] = 1
 settings[basic_breadcrumb] = 1

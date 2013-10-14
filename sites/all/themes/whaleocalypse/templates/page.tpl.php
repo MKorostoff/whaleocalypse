@@ -54,10 +54,8 @@
 
     <section id="content">
 
-        <?php if ($breadcrumb || $title|| $messages || $tabs || $action_links): ?>
+        <?php if ($title|| $messages || $tabs || $action_links): ?>
           <div id="content-header">
-
-            <?php print $breadcrumb; ?>
 
             <?php if ($page['highlighted']): ?>
               <div id="highlighted"><?php print render($page['highlighted']) ?></div>
