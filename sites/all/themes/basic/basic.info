@@ -4,6 +4,7 @@ screenshot = images/screenshot.gif
 core = "7.x"
 project = "basic"
 engine = phptemplate
+hidden = TRUE
 
 regions[page_top] = Page top
 regions[header] = Header
