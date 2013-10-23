@@ -2,7 +2,6 @@ name = Whaleocalypse
 description = A subtheme of whales in a post apocalyptic future.
 screenshot = images/screenshot.gif
 core = "7.x"
-project = "basic"
 engine = phptemplate
 base theme  = basic
 
