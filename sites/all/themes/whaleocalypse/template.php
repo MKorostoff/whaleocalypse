@@ -1,8 +1,8 @@
 <?php
 
 function whaleocalypse_preprocess_page(&$vars) {
-	if ($vars['is_front']) {
-		$node = menu_get_object();
+	$node = menu_get_object();
+	if ( is_object($node) && $node->type == 'comic') {
 		$vars['title'] = l($node->title, 'node/' . $node->nid);
 	}
 }

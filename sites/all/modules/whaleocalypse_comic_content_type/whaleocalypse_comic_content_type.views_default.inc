@@ -52,6 +52,13 @@ function whaleocalypse_comic_content_type_views_default_views() {
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'comic' => 'comic',
+  );
 
   /* Display: Feed */
   $handler = $view->new_display('feed', 'Feed', 'feed');
@@ -66,13 +73,24 @@ function whaleocalypse_comic_content_type_views_default_views() {
   );
   $handler->display->display_options['sitename_title'] = 0;
 
-  /* Display: Node page */
-  $handler = $view->new_display('single_node_page', 'Node page', 'single_node_page_1');
+  /* Display: Front */
+  $handler = $view->new_display('single_node_page', 'Front', 'single_node_page_1');
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '1';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'full_node';
   $handler->display->display_options['path'] = 'main';
+
+  /* Display: Random */
+  $handler = $view->new_display('single_node_page', 'Random', 'single_node_page_2');
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['style_plugin'] = 'full_node';
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: Global: Random */
+  $handler->display->display_options['sorts']['random']['id'] = 'random';
+  $handler->display->display_options['sorts']['random']['table'] = 'views';
+  $handler->display->display_options['sorts']['random']['field'] = 'random';
+  $handler->display->display_options['path'] = 'random';
   $export['main'] = $view;
 
   return $export;

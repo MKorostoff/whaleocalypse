@@ -31,11 +31,86 @@ function whaleocalypse_side_bar_default_fe_block_settings() {
         'region' => 'sidebar_second',
         'status' => 1,
         'theme' => 'whaleocalypse',
-        'weight' => 0,
+        'weight' => -11,
       ),
     ),
     'title' => 'About',
     'visibility' => 0,
+  );
+
+  $export['block-about_the_author'] = array(
+    'cache' => -1,
+    'custom' => 0,
+    'machine_name' => 'about_the_author',
+    'module' => 'block',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+      'whaleocalypse' => array(
+        'region' => 'sidebar_second',
+        'status' => 1,
+        'theme' => 'whaleocalypse',
+        'weight' => 0,
+      ),
+    ),
+    'title' => 'About the author',
+    'visibility' => 0,
+  );
+
+  $export['block-also_by_matt_korostoff'] = array(
+    'cache' => -1,
+    'custom' => 0,
+    'machine_name' => 'also_by_matt_korostoff',
+    'module' => 'block',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+      'whaleocalypse' => array(
+        'region' => 'sidebar_second',
+        'status' => 1,
+        'theme' => 'whaleocalypse',
+        'weight' => 0,
+      ),
+    ),
+    'title' => 'Also by Matt Korostoff',
+    'visibility' => 0,
+  );
+
+  $export['menu-menu-sidebar-menu'] = array(
+    'cache' => -1,
+    'delta' => 'menu-sidebar-menu',
+    'module' => 'menu',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+      'whaleocalypse' => array(
+        'region' => 'sidebar_second',
+        'status' => 1,
+        'theme' => 'whaleocalypse',
+        'weight' => -12,
+      ),
+    ),
   );
 
   $export['search-form'] = array(
@@ -57,7 +132,7 @@ function whaleocalypse_side_bar_default_fe_block_settings() {
         'region' => 'sidebar_second',
         'status' => 1,
         'theme' => 'whaleocalypse',
-        'weight' => -8,
+        'weight' => -13,
       ),
     ),
     'title' => 'Search Transcripts',
