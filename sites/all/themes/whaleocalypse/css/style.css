@@ -93,7 +93,7 @@ article.comment a:visited {
 }
 article.comment .submitted a:link,
 article.comment .submitted a:visited {
-  color: rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.4);
 }
 article.comment.comment a:hover {
   color: white;
