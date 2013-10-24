@@ -1,5 +1,7 @@
 <?php
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the Whaleocalypse Side Bar feature.
  */
+
+include_once 'whaleocalypse_side_bar.features.inc';

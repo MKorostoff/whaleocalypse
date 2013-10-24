@@ -92,6 +92,7 @@ function whaleocalypse_side_bar_default_fe_block_settings() {
 
   $export['menu-menu-sidebar-menu'] = array(
     'cache' => -1,
+    'custom' => 0,
     'delta' => 'menu-sidebar-menu',
     'module' => 'menu',
     'node_types' => array(),
@@ -111,6 +112,8 @@ function whaleocalypse_side_bar_default_fe_block_settings() {
         'weight' => -12,
       ),
     ),
+    'title' => '',
+    'visibility' => 0,
   );
 
   $export['search-form'] = array(
