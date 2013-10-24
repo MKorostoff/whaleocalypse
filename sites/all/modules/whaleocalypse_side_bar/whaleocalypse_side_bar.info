@@ -1,0 +1,7 @@
+name = Whaleocalypse Side Bar
+description = Block settings for the whaleocalypse sidebar.
+core = 7.x
+package = Whaleocalypse
+dependencies[] = fe_block
+features[fe_block_boxes][] = about
+features[features_api][] = api:2

@@ -7,4 +7,8 @@ function whaleocalypse_form_alter(&$form) {
 	$form['author']['mail']['#title'] = 'Email <span class="optional">(optional)</span>';
 	$form['author']['name']['#title'] = 'Name <span class="optional">(optional)</span>';
 	$form['author']['homepage']['#title'] = 'Website <span class="optional">(optional)</span>';
+
+	if ($form['#form_id'] == "search_block_form") {
+		$form['actions']['submit']['#value'] = "»";
+	}
 }

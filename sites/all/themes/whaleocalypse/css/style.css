@@ -145,6 +145,16 @@ a:hover, a:active {
   text-decoration: underline;
 }
 
+.sidebar h2 {
+  font-size: 18px;
+  background-color: #560202;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: normal;
+}
+
 /* Titles. */
 #site-name {
   font-size: 2.2em;

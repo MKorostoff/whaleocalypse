@@ -5,13 +5,6 @@
 }
 
 
-@media screen and (max-width: 480px) {
-
-}
-@media screen and (max-width: 768px) {
-
-}
-
 /* Layout
  * ------
  * Using a negative margin technique, adapted from ZEN. The page is loaded by this order:
@@ -79,7 +72,7 @@
   display: block;
   float: left;
   margin-right: 2.12766%;
-  width: 74.46809%;
+  width: 78.3%;
 }
 .one-sidebar.sidebar-second #content:last-child {
   margin-right: 0;
@@ -95,7 +88,7 @@
     margin-right: 0;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1024px) {
   .one-sidebar.sidebar-second #content {
     display: block;
     float: left;
@@ -223,7 +216,7 @@
   display: block;
   float: left;
   margin-right: 2.12766%;
-  width: 23.40426%;
+  width: 19.5%;
   margin-left: 0%;
 }
 #sidebar-second:last-child {
@@ -241,7 +234,7 @@
     margin-right: 0;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1024px) {
   #sidebar-second {
     display: block;
     float: left;
