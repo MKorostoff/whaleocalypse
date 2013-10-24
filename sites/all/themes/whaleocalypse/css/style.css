@@ -84,7 +84,7 @@ article.comment .submitted {
   font-size: 10px;
   font-family: monospace;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.4);
 }
 article.comment a:link,
 article.comment a:visited {
@@ -118,11 +118,21 @@ tr.odd,
 tr.even {
   color: black;
 }
-.comment-by-node-author {
+article.comment.comment-by-node-author {
+  background-color: rgb(100, 149, 237);
 }
-.comment-by-node-author .user-picture {
+article.comment.comment-by-node-author .submitted a:link, 
+article.comment.comment-by-node-author .submitted a:visited,
+article.comment.comment-by-node-author .submitted {
+  color: white;
+}
+.comment .field-name-comment-body {
+  margin-left: 60px;
+}
+.comment .user-picture {
   float: left;
   padding-right: 5px;
+  max-width: 60px;
 }
 section.comments > h2.title {
   text-transform: uppercase;
