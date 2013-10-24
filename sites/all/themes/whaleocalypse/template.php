@@ -22,6 +22,13 @@ function whaleocalypse_preprocess_page(&$vars) {
  * 1) if the commenter does not supply an author name, default to 'Anonymous'
  * 2) if the author does supply a name, show the name.
  * 3) if the author supplies a homepage, link the name to the homepage (i.e. <a href="homepage">author</a>)
+ *
+ * We'll also use this to get the gravatar if one exists and cache a 60x60 pixel
+ * version using imagecache_external.
+ *
+ * @todo 
+ *   Fix it so that my personal picture and username link to mattkorostoff.com 
+ *   instead of the drupal user profile page.
  */
 function whaleocalypse_preprocess_comment(&$vars) {
 	$cid = $vars['elements']['#comment']->cid;
@@ -38,7 +45,7 @@ function whaleocalypse_preprocess_comment(&$vars) {
 		$gravatar = "http://www.gravatar.com/avatar/" . 
 		md5( strtolower( trim( $email ) ) ) . 
 		"?d=" . urlencode( 'identicon' ) . 
-		"&s=100";
+		"&s=60";
 
 		$vars['picture'] = '<div class="user-picture">' . 
 		theme('imagecache_external', array('path' => $gravatar, 'style_name'=> 'user_image')) . 
@@ -51,5 +58,5 @@ function whaleocalypse_preprocess_comment(&$vars) {
 		if ($result['homepage']) {
 			$vars['author'] = l($vars['author'], $result['homepage'], array("attributes" => array("target" => "_blank")));
 		}
-	}
+	} 
 }
