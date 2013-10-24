@@ -16,7 +16,7 @@ function whaleocalypse_side_bar_strongarm() {
   $strongarm->name = 'views_defaults';
   $strongarm->value = array(
     'delete_comments' => TRUE,
-    'archive' => FALSE,
+    'archive' => TRUE,
   );
   $export['views_defaults'] = $strongarm;
 
