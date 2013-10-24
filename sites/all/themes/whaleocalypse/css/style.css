@@ -153,6 +153,22 @@ a:hover, a:active {
   text-align: center;
   font-weight: bold;
   letter-spacing: normal;
+  margin: 0;
+}
+
+.region-sidebar-second > .block {
+  margin-top: 1em;
+}
+
+#block-search-form .form-submit {
+  padding: 2px 7px;
+  line-height: 1.1;
+  margin-right: 0;
+}
+
+#block-search-form .form-text {
+  width: 85%;
+  float: left;
 }
 
 /* Titles. */
