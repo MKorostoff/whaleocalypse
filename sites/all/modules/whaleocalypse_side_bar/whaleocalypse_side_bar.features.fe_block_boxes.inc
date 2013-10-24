@@ -14,7 +14,7 @@ function whaleocalypse_side_bar_default_fe_block_boxes() {
   $fe_block_boxes->info = 'About';
   $fe_block_boxes->format = 'full_html';
   $fe_block_boxes->machine_name = 'about';
-  $fe_block_boxes->body = '<img src="/sites/all/modules/whaleocalypse_side_bar/images/about.jpg" />';
+  $fe_block_boxes->body = '<a href="/about"><img src="/sites/all/modules/whaleocalypse_side_bar/images/about.jpg" /></a>';
 
   $export['about'] = $fe_block_boxes;
 
