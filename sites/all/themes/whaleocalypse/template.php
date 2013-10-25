@@ -61,3 +61,18 @@ function whaleocalypse_preprocess_comment( &$vars ) {
 		}
 	}
 }
+
+/**
+ * Add the comic strip name right above the body field.
+ */
+function whaleocalypse_preprocess_field( &$vars ) {
+	if ( isset( $vars['element']['#bundle'] ) &&
+		$vars['element']['#bundle'] == 'comic' &&
+		isset( $vars['element']['#field_name'] ) &&
+		$vars['element']['#field_name'] == 'body' ) {
+		$vars['label'] = $vars['element']['#object']->title;
+	}
+	if ( $vars['element']['#field_name'] == 'field_transcript' ) {
+		drupal_add_js( drupal_get_path( 'theme', 'whaleocalypse' ) .'/js/expand-transcript.js', array( 'scope' => 'footer', 'type' => 'file' ));
+	}
+}
