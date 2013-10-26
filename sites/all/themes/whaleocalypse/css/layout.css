@@ -154,4 +154,14 @@
   body #header {
     margin-top: 0;
   }
+  .field-name-field-transcript.field-name-field-transcript .field-label.field-label {
+    position: static;
+  }
+  .field-name-field-transcript.field-name-field-transcript {
+    text-align: center;
+    margin-top: 1em;
+  }
+  .field-name-field-transcript.field-name-field-transcript .field-items {
+    text-align: left;
+  }
 }

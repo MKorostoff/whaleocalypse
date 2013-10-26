@@ -251,6 +251,10 @@ a:hover, a:active {
   float: left;
 }
 
+#block-search-form .content {
+  margin: 10px 0;
+}
+
 #block-block-4 {
   font-style: italic;
   font-size: 12px;
