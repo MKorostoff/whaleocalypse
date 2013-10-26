@@ -291,6 +291,105 @@ a:hover, a:active {
   margin: 0;
 }
 
+/* Sprites */
+
+.flippy li.first.empty,
+.flippy li.last.empty {
+  display: inline-block;
+}
+
+ul.flippy li,
+#block-menu-menu-sidebar-menu ul.menu li {
+  width: 44px;
+  margin: 0 9px;
+  padding: 0;
+  font-size: 12px;
+  color: #CCC;
+  display: inline-block;
+  background: url('../images/sprite.png') no-repeat;
+}
+
+ul.flippy li a,
+#block-menu-menu-sidebar-menu ul.menu li a {
+  display: block;
+  padding-top: 44px;
+  color: #ccc;
+}
+
+ul.flippy li.empty.empty,
+ul.flippy li.empty:hover {
+  padding-top: 44px;
+  color: #999;
+  background-position: -88px 0;
+}
+
+ul.flippy li:hover {
+  background-position: -44px 0;
+}
+
+ul.flippy li.first {
+  background-position: 0px -191px;
+}
+
+ul.flippy li.first:hover {
+  background-position: -44px -191px;
+}
+
+ul.flippy li.first.empty,
+ul.flippy li.first.empty:hover {
+  background-position: -88px -191px;
+}
+
+ul.flippy li.next {
+  background-position: 0px -61px;
+}
+
+ul.flippy li.next:hover {
+  background-position: -44px -61px;
+}
+
+ul.flippy li.next.empty,
+ul.flippy li.next.empty:hover {
+  background-position: -88px -61px;
+}
+
+ul.flippy li.last {
+  background-position: 0px -125px;
+}
+
+ul.flippy li.last:hover {
+  background-position: -44px -125px;
+}
+
+ul.flippy li.last.empty,
+ul.flippy li.last.empty:hover {
+  background-position: -88px -125px;
+}
+
+#block-menu-menu-sidebar-menu ul.menu li.archive {
+  background-position: 0px -383px;
+}
+
+#block-menu-menu-sidebar-menu ul.menu li.archive:hover {
+  background-position: -44px -383px;
+}
+
+#block-menu-menu-sidebar-menu ul.menu li.random {
+  background-position: 0px -252px;
+}
+
+#block-menu-menu-sidebar-menu ul.menu li.random:hover {
+  background-position: -44px -252px;
+}
+
+#block-menu-menu-sidebar-menu ul.menu li.subscribe {
+  background-position: 0px -317px;
+}
+
+#block-menu-menu-sidebar-menu ul.menu li.subscribe:hover {
+  background-position: -44px -317px;
+}
+
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.3em;
 }
