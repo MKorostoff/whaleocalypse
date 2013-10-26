@@ -148,4 +148,10 @@
   #sidebar-second:last-child {
     margin-right: 0;
   }
+  img {
+    width: 100%;
+  }
+  body #header {
+    margin-top: 0;
+  }
 }

@@ -56,6 +56,9 @@ input[type="submit"]:hover {
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4197ee', endColorstr='#79bbff');
   background-color:#4197ee;
 }
+#header {
+  margin-top: 1em;
+}
 .classname:active {
   position:relative;
   top:1px;
@@ -204,6 +207,7 @@ section.comments > h2.title {
 }
 .node.node-comic .field-name-field-comic {
   text-align: center;
+  margin-top: 1em;
 }
 img {
   max-width: 100%;
@@ -219,18 +223,6 @@ a:link, a:visited {
 a:hover, a:active {
   color: red;
   text-decoration: underline;
-}
-
-.node-type-page #block-system-main a:link,
-.node-type-page #block-system-main a:visited {
-  color: #add8e6;
-  text-decoration: underline;
-}
-
-.node-type-page #block-system-main a:active,
-.node-type-page #block-system-main a:hover {
-  color: red;
-  text-decoration: none;
 }
 
 .sidebar h2 {
@@ -317,7 +309,7 @@ h2 {
 }
 
 body.node-type-page h3 {
-  color: #faebd7;
+  color: red;
 }
 
 h3 {
