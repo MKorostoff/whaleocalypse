@@ -59,6 +59,28 @@ input[type="submit"]:hover {
 #header {
   margin-top: 1em;
 }
+body strong {
+  font-weight: 100;
+  font-style: italic;
+}
+blockquote {
+  margin-left: 8%;
+  font-family: georgia,serif;
+  background-color: #444;
+  padding: 0.8em;
+  padding-bottom: 0.1em;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+blockquote strong {
+  text-decoration: underline;
+}
+cite {
+  display: block;
+  font-family: monospace;
+  margin-top: 10px;
+  text-align: right;
+}
 .classname:active {
   position:relative;
   top:1px;
