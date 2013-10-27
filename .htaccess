@@ -221,6 +221,9 @@ DirectoryIndex index.php index.html index.htm
 
   RewriteCond %{QUERY_STRING}  ^p=245$
   RewriteRule (.*) http://whaleocalypse.com/whaleocalypse-035/? [R=301,L]
+  
+  RewriteCond %{QUERY_STRING}  ^p=250$
+  RewriteRule (.*) http://whaleocalypse.com/whaleocalypse-036/? [R=301,L]
 
   RewriteCond %{QUERY_STRING}  ^p=29$
   RewriteRule (.*) http://whaleocalypse.com/about/? [R=301,L]
