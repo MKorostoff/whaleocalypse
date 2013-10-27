@@ -63,6 +63,7 @@ body strong {
   font-weight: 100;
   font-style: italic;
 }
+
 blockquote {
   margin-left: 8%;
   font-family: georgia,serif;
@@ -415,6 +416,7 @@ ul.flippy li.last.empty:hover {
 #block-menu-menu-sidebar-menu ul.menu li.subscribe:hover {
   background-position: -44px -317px;
 }
+
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.3em;

@@ -164,4 +164,10 @@
   .field-name-field-transcript.field-name-field-transcript .field-items {
     text-align: left;
   }
+
+  .node-type-page #block-system-main .content p,
+  .node-type-page #block-system-main .content h3 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
