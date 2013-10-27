@@ -114,13 +114,127 @@ DirectoryIndex index.php index.html index.htm
   RewriteCond %{HTTP_HOST} ^www.whalecomic.com$
   RewriteRule (.*)$ http://whaleocalypse.com/$1 [R=301,L]
 
+  RewriteCond %{QUERY_STRING}  ^p=42$
+  RewriteRule (.*) http://whaleocalypse.com/whaleocalypse-001/? [R=301,L]
+
+  RewriteCond %{QUERY_STRING}  ^p=44$
+  RewriteRule (.*) http://whaleocalypse.com/whaleocalypse-002/? [R=301,L]
+
+  RewriteCond %{QUERY_STRING}  ^p=48$
+  RewriteRule (.*) http://whaleocalypse.com/whaleocalypse-003/? [R=301,L]
+
+  RewriteCond %{QUERY_STRING}  ^p=50$
+  RewriteRule (.*) http://whaleocalypse.com/whaleocalypse-004/? [R=301,L]
+
+  RewriteCond %{QUERY_STRING}  ^p=54$
+  RewriteRule (.*) http://whaleocalypse.com/whaleocalypse-005/? [R=301,L]
+
+  RewriteCond %{QUERY_STRING}  ^p=56$
+  RewriteRule (.*) http://whaleocalypse.com/whaleocalypse-006/? [R=301,L]
+
+  RewriteCond %{QUERY_STRING}  ^p=59$
+  RewriteRule (.*) http://whaleocalypse.com/whaleocalypse-007/? [R=301,L]
+
+  RewriteCond %{QUERY_STRING}  ^p=73$
+  RewriteRule (.*) http://whaleocalypse.com/whaleocalypse-008/? [R=301,L]
+
+  RewriteCond %{QUERY_STRING}  ^p=76$
+  RewriteRule (.*) http://whaleocalypse.com/whaleocalypse-009/? [R=301,L]
+
+  RewriteCond %{QUERY_STRING}  ^p=78$
+  RewriteRule (.*) http://whaleocalypse.com/whaleocalypse-010/? [R=301,L]
+
+  RewriteCond %{QUERY_STRING}  ^p=92$
+  RewriteRule (.*) http://whaleocalypse.com/whaleocalypse-011/? [R=301,L]
+
+  RewriteCond %{QUERY_STRING}  ^p=101$
+  RewriteRule (.*) http://whaleocalypse.com/whaleocalypse-012/? [R=301,L]
+
+  RewriteCond %{QUERY_STRING}  ^p=104$
+  RewriteRule (.*) http://whaleocalypse.com/whaleocalypse-013/? [R=301,L]
+
+  RewriteCond %{QUERY_STRING}  ^p=105$
+  RewriteRule (.*) http://whaleocalypse.com/whaleocalypse-014/? [R=301,L]
+
+  RewriteCond %{QUERY_STRING}  ^p=124$
+  RewriteRule (.*) http://whaleocalypse.com/whaleocalypse-015/? [R=301,L]
+
+  RewriteCond %{QUERY_STRING}  ^p=127$
+  RewriteRule (.*) http://whaleocalypse.com/whaleocalypse-016/? [R=301,L]
+
+  RewriteCond %{QUERY_STRING}  ^p=131$
+  RewriteRule (.*) http://whaleocalypse.com/whaleocalypse-017/? [R=301,L]
+
+  RewriteCond %{QUERY_STRING}  ^p=133$
+  RewriteRule (.*) http://whaleocalypse.com/whaleocalypse-018/? [R=301,L]
+
+  RewriteCond %{QUERY_STRING}  ^p=135$
+  RewriteRule (.*) http://whaleocalypse.com/whaleocalypse-019/? [R=301,L]
+
+  RewriteCond %{QUERY_STRING}  ^p=136$
+  RewriteRule (.*) http://whaleocalypse.com/whaleocalypse-020/? [R=301,L]
+
+  RewriteCond %{QUERY_STRING}  ^p=137$
+  RewriteRule (.*) http://whaleocalypse.com/whaleocalypse-021/? [R=301,L]
+
+  RewriteCond %{QUERY_STRING}  ^p=182$
+  RewriteRule (.*) http://whaleocalypse.com/whaleocalypse-022/? [R=301,L]
+
+  RewriteCond %{QUERY_STRING}  ^p=195$
+  RewriteRule (.*) http://whaleocalypse.com/whaleocalypse-023/? [R=301,L]
+
+  RewriteCond %{QUERY_STRING}  ^p=198$
+  RewriteRule (.*) http://whaleocalypse.com/whaleocalypse-024/? [R=301,L]
+
+  RewriteCond %{QUERY_STRING}  ^p=199$
+  RewriteRule (.*) http://whaleocalypse.com/whaleocalypse-025/? [R=301,L]
+
+  RewriteCond %{QUERY_STRING}  ^p=200$
+  RewriteRule (.*) http://whaleocalypse.com/whaleocalypse-026/? [R=301,L]
+
+  RewriteCond %{QUERY_STRING}  ^p=201$
+  RewriteRule (.*) http://whaleocalypse.com/whaleocalypse-027/? [R=301,L]
+
+  RewriteCond %{QUERY_STRING}  ^p=202$
+  RewriteRule (.*) http://whaleocalypse.com/whaleocalypse-028/? [R=301,L]
+
+  RewriteCond %{QUERY_STRING}  ^p=224$
+  RewriteRule (.*) http://whaleocalypse.com/whaleocalypse-029/? [R=301,L]
+
+  RewriteCond %{QUERY_STRING}  ^p=225$
+  RewriteRule (.*) http://whaleocalypse.com/whaleocalypse-030/? [R=301,L]
+
+  RewriteCond %{QUERY_STRING}  ^p=227$
+  RewriteRule (.*) http://whaleocalypse.com/whaleocalypse-031/? [R=301,L]
+
+  RewriteCond %{QUERY_STRING}  ^p=230$
+  RewriteRule (.*) http://whaleocalypse.com/whaleocalypse-032/? [R=301,L]
+
+  RewriteCond %{QUERY_STRING}  ^p=231$
+  RewriteRule (.*) http://whaleocalypse.com/whaleocalypse-033/? [R=301,L]
+
+  RewriteCond %{QUERY_STRING}  ^p=232$
+  RewriteRule (.*) http://whaleocalypse.com/whaleocalypse-034/? [R=301,L]
+
+  RewriteCond %{QUERY_STRING}  ^p=235$
+  RewriteRule (.*) http://whaleocalypse.com/dont-give-me/? [R=301,L]
+
+  RewriteCond %{QUERY_STRING}  ^p=245$
+  RewriteRule (.*) http://whaleocalypse.com/whaleocalypse-035/? [R=301,L]
+
+  RewriteCond %{QUERY_STRING}  ^p=29$
+  RewriteRule (.*) http://whaleocalypse.com/about/? [R=301,L]
+
+  RewriteCond %{QUERY_STRING}  ^p=35$
+  RewriteRule (.*) http://whaleocalypse.com/about-author/? [R=301,L]
+
+
   # Pass all requests not referring directly to files in the filesystem to
   # index.php. Clean URLs are handled in drupal_environment_initialize().
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_URI} !=/favicon.ico
   RewriteRule ^ index.php [L]
-
 
   # Rules to correctly serve gzip compressed CSS and JS files.
   # Requires both mod_rewrite and mod_headers to be enabled.
