@@ -181,10 +181,9 @@ abstract class BotchaRecipe {
    * Must be overridden.
    */
   public function getInfo() {
+    dpm(arg());
     $this->error_field = 'mail';
-    $this->error_text = t('You must be a human, not a spam bot, to submit forms on this website.') . ' ' .
-      t('If you insist that you are a human, please try again.') . ' ' .
-      t('If error persists, contact webmaster using contact link at the bottom of this page and give all the details of this error (your browser, version, OS).');
+    $this->error_text = t('Unfortunately your post could not be submitted.');
   }
 
   /**
