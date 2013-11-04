@@ -181,7 +181,6 @@ abstract class BotchaRecipe {
    * Must be overridden.
    */
   public function getInfo() {
-    dpm(arg());
     $this->error_field = 'mail';
     $this->error_text = t('Unfortunately your post could not be submitted.');
   }
