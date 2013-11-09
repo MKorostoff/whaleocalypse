@@ -320,6 +320,10 @@ article.node-comic .field-name-field-story-arc {
   margin-left: 25%;
 }
 
+#block-views-story_archive-block {
+  margin-top: 3em;
+}
+
 .role-anonymous-user h1 + .tabs {
   margin: 0;
 }
