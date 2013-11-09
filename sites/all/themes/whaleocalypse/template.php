@@ -75,4 +75,24 @@ function whaleocalypse_preprocess_field( &$vars ) {
 	if ( $vars['element']['#field_name'] == 'field_transcript' ) {
 		drupal_add_js( drupal_get_path( 'theme', 'whaleocalypse' ) .'/js/expand-transcript.js', array( 'scope' => 'footer', 'type' => 'file' ));
 	}
+	//Create the custom "story arc" functionality
+	if ( isset($vars['element']['#field_name']) && $vars['element']['#field_name'] == 'field_story_arc') {
+		$tid = $vars['element']['#object']->field_story_arc[LANGUAGE_NONE][0]['tid'];
+		$nid = $vars['element']['#object']->nid;
+		$story_arc_count = new EntityFieldQuery();
+		$vars['story_arc_count'] = $story_arc_count->entityCondition('entity_type', 'node')
+  												   ->entityCondition('bundle', 'comic')
+  												   ->fieldCondition('field_story_arc', 'tid', $tid, '=')
+  												   ->count()
+  												   ->execute();
+
+		$story_arc_position = new EntityFieldQuery();
+		$story_arc_position = $story_arc_position->entityCondition('entity_type', 'node')
+  												   ->entityCondition('bundle', 'comic')
+  												   ->fieldCondition('field_story_arc', 'tid', $tid, '=')
+  												   ->propertyOrderBy('created', 'ASC')
+  												   ->execute();
+  		
+  		$vars['story_arc_position'] = array_search( $nid, array_keys( $story_arc_position['node'] ) ) + 1;
+	}
 }

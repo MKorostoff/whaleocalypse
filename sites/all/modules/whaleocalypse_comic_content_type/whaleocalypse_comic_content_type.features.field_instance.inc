@@ -22,14 +22,13 @@ function whaleocalypse_comic_content_type_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 2,
+        'type' => 'hidden',
+        'weight' => 4,
       ),
     ),
     'entity_type' => 'node',
@@ -67,7 +66,7 @@ function whaleocalypse_comic_content_type_field_default_field_instances() {
           'image_style' => 'comic_main',
         ),
         'type' => 'image',
-        'weight' => 1,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -77,7 +76,7 @@ function whaleocalypse_comic_content_type_field_default_field_instances() {
           'image_style' => 'comic_main',
         ),
         'type' => 'image',
-        'weight' => 0,
+        'weight' => 1,
       ),
     ),
     'entity_type' => 'node',
@@ -107,6 +106,43 @@ function whaleocalypse_comic_content_type_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-comic-field_story_arc'
+  $field_instances['node-comic-field_story_arc'] = array(
+    'bundle' => 'comic',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 1,
+      ),
+      'teaser' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_story_arc',
+    'label' => 'Story Arc',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 6,
+    ),
+  );
+
   // Exported field_instance: 'node-comic-field_transcript'
   $field_instances['node-comic-field_transcript'] = array(
     'bundle' => 'comic',
@@ -119,7 +155,13 @@ function whaleocalypse_comic_content_type_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 4,
+        'weight' => 5,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
       ),
     ),
     'entity_type' => 'node',
@@ -167,6 +209,7 @@ function whaleocalypse_comic_content_type_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Comic');
   t('Description');
+  t('Story Arc');
   t('Transcript');
 
   return $field_instances;
