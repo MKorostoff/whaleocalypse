@@ -306,6 +306,7 @@ a:hover, a:active {
   margin: 0;
 }
 
+body.page-taxonomy-term article.node-comic > header > h2,
 .node-type-comic h1 {
   font-size: 1.6em;
   margin: 0;
