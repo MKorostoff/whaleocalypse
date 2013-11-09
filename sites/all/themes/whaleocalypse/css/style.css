@@ -315,6 +315,11 @@ body.page-taxonomy-term article.node-comic > header > h2,
   margin-top: 0.7em;
 }
 
+article.node-comic .field-name-field-story-arc {
+  font-style: italic;
+  margin-left: 25%;
+}
+
 .role-anonymous-user h1 + .tabs {
   margin: 0;
 }

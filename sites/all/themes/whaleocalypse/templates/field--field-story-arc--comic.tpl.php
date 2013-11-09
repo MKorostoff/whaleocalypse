@@ -45,14 +45,14 @@
  */
 ?>
 
-<div class="<?php print $classes; ?>"<?php print $attributes; ?>>
+<span class="<?php print $classes; ?>"<?php print $attributes; ?>>
   <?php if (!$label_hidden): ?>
     <h2 class="field-label"<?php print $title_attributes; ?>><?php print $label; ?></h2>
   <?php endif; ?>
-  <div class="field-items"<?php print $content_attributes; ?>>
+  <span class="field-items"<?php print $content_attributes; ?>>
     <?php foreach ($items as $delta => $item): ?>
-      <div class="field-item <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>><?php print 'This is strip ' 
-      . $story_arc_position . ' of ' . $story_arc_count . ' in the story ' . render($item); ?></div>
+      <span class="field-item <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>><?php print 'This is strip ' 
+      . $story_arc_position . ' of ' . $story_arc_count . ' in the story ' . render($item); ?></span>
     <?php endforeach; ?>
-  </div>
-</div>
+  </span>
+</span>
