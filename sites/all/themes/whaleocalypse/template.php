@@ -14,6 +14,11 @@ function whaleocalypse_preprocess_page( &$vars ) {
 	if ( is_object( $node ) && $node->type == 'comic' ) {
 		$vars['title'] = l( $node->title, 'node/' . $node->nid );
 	}
+	if ($vars['logo']) {
+		//pass the site logo through the l() function
+        $logo_image = '<img src="' . $vars['logo'] . '" alt="Home"/>';
+	    $vars['logo'] = l($logo_image, 'main', array("html" => TRUE, "attributes" => array("title" => "Home", "rel" => "home", "id" => "logo")));
+	}
 }
 
 /**
@@ -94,5 +99,15 @@ function whaleocalypse_preprocess_field( &$vars ) {
   												   ->execute();
   		
   		$vars['story_arc_position'] = array_search( $nid, array_keys( $story_arc_position['node'] ) ) + 1;
+	}
+}
+
+function whaleocalypse_link($variables) {
+	if ( isset( $_COOKIE['never_cache_again'] ) ) {
+		$rand = substr(md5(microtime()),rand(0,26),5);
+		return '<a href="' . check_plain(url($variables['path'], $variables['options'])) . '?' . $rand . '"' . drupal_attributes($variables['options']['attributes']) . '>' . ($variables['options']['html'] ? $variables['text'] : check_plain($variables['text'])) . '</a>';
+	}
+	else {
+		return '<a href="' . check_plain(url($variables['path'], $variables['options'])) . '"' . drupal_attributes($variables['options']['attributes']) . '>' . ($variables['options']['html'] ? $variables['text'] : check_plain($variables['text'])) . '</a>';
 	}
 }
