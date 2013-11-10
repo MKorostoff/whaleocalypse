@@ -306,12 +306,22 @@ a:hover, a:active {
   margin: 0;
 }
 
+body.page-taxonomy-term article.node-comic > header > h2,
 .node-type-comic h1 {
   font-size: 1.6em;
   margin: 0;
   padding: 0;
   font-weight: bold;
   margin-top: 0.7em;
+}
+
+article.node-comic .field-name-field-story-arc {
+  font-style: italic;
+  margin-left: 25%;
+}
+
+#block-views-story_archive-block {
+  margin-top: 3em;
 }
 
 .role-anonymous-user h1 + .tabs {
