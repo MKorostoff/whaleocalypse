@@ -6,7 +6,6 @@ function whaleocalypse_purge_database_cache($urls) {
 		$ka = db_delete('cache_page')
   		->condition('cid', $url)
   		->execute();
-  		dpm($ka);
 	}
 }
 
