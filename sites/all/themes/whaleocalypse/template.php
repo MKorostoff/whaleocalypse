@@ -53,9 +53,7 @@ function whaleocalypse_preprocess_comment( &$vars ) {
 			"?d=" . urlencode( 'identicon' ) .
 			"&s=60";
 
-		$vars['picture'] = '<div class="user-picture">' .
-			theme( 'imagecache_external', array( 'path' => $gravatar, 'style_name'=> 'user_image' ) ) .
-			'</div>';
+		$vars['picture'] = '<div class="user-picture"><img src="' . $gravatar . '" /></div>';
 
 		if ( $result['name'] ) {
 			$vars['author'] = $result['name'];
