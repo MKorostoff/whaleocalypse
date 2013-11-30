@@ -1,13 +1,14 @@
 name = Imagecache External
-description = Allows you to fetch and use external images with imagecache
+description = Allows you to fetch external images and use image styles on them.
 dependencies[] = image
 files[] = imagecache_external.admin.inc
 files[] = imagecache_external.module
 core = 7.x
+configure = admin/config/media/imagecache_external
 
-; Information added by drupal.org packaging script on 2012-04-01
-version = "7.x-2.0-beta1"
+; Information added by  packaging script on 2013-11-28
+version = "7.x-2.0-beta2"
 core = "7.x"
 project = "imagecache_external"
-datestamp = "1333315246"
+datestamp = "1385627355"
 
