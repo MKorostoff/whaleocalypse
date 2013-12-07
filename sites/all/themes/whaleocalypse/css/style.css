@@ -317,7 +317,7 @@ body.page-taxonomy-term article.node-comic > header > h2,
 
 article.node-comic .field-name-field-story-arc {
   font-style: italic;
-  margin-left: 25%;
+  text-align: center;
 }
 
 #block-views-story_archive-block {

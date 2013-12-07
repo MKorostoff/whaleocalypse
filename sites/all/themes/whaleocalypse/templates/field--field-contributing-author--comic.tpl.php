@@ -51,8 +51,8 @@
   <?php endif; ?>
   <div class="field-items"<?php print $content_attributes; ?>>
     <?php foreach ($items as $delta => $item): ?>
-      <div class="field-item <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>><?php print 'This is strip ' 
-      . $story_arc_position . ' of ' . $story_arc_count . ' in the story ' . render($item); ?></div>
+      <div class="field-item <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>>
+      	<?php print 'This strip is community contributed by ' . render($item) . '.  ' . $call_to_action; ?></div>
     <?php endforeach; ?>
   </div>
 </div>

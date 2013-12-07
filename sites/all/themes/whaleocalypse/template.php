@@ -75,6 +75,7 @@ function whaleocalypse_preprocess_field( &$vars ) {
 		$vars['element']['#field_name'] == 'body' ) {
 		$vars['label'] = $vars['element']['#object']->title;
 	}
+	//Add the transcript expand js if the field is populated
 	if ( $vars['element']['#field_name'] == 'field_transcript' ) {
 		drupal_add_js( drupal_get_path( 'theme', 'whaleocalypse' ) .'/js/expand-transcript.js', array( 'scope' => 'footer', 'type' => 'file' ));
 	}
@@ -97,6 +98,15 @@ function whaleocalypse_preprocess_field( &$vars ) {
   												   ->execute();
   		
   		$vars['story_arc_position'] = array_search( $nid, array_keys( $story_arc_position['node'] ) ) + 1;
+	}
+
+
+	//Add the author URL if it is set.
+	if ( isset($vars['element']['#field_name']) && $vars['element']['#field_name'] == 'field_contributing_author') {
+		if ( isset( $vars['element']['#object']->field_contributing_author_url[LANGUAGE_NONE][0] ) ) {
+			$vars['items'][0]['#markup'] = l($vars['items'][0]['#markup'], $vars['element']['#object']->field_contributing_author_url[LANGUAGE_NONE][0]['value'], array("attributes" => array("target" => "_blank") ) );
+		}
+		$vars['call_to_action'] = 'You can ' . l( 'write your own whaleocalypse too.', 'node/169', array() );
 	}
 }
 

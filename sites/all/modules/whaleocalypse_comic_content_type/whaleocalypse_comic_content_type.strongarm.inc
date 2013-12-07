@@ -98,11 +98,14 @@ function whaleocalypse_comic_content_type_strongarm() {
         'redirect' => array(
           'weight' => '5',
         ),
+        'metatags' => array(
+          'weight' => '40',
+        ),
       ),
       'display' => array(
         'flippy_pager' => array(
           'default' => array(
-            'weight' => '3',
+            'weight' => '4',
             'visible' => TRUE,
           ),
           'teaser' => array(
