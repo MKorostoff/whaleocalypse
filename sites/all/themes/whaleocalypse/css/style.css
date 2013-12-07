@@ -315,9 +315,13 @@ body.page-taxonomy-term article.node-comic > header > h2,
   margin-top: 0.7em;
 }
 
-article.node-comic .field-name-field-story-arc {
+article.node-comic .field-name-field-story-arc,
+article.node-comic .field-name-field-contributing-author {
   font-style: italic;
   text-align: center;
+}
+article.node-comic .field-name-field-contributing-author {
+  padding: 2em 0;
 }
 
 #block-views-story_archive-block {
