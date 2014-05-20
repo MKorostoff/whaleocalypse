@@ -7,9 +7,9 @@ files[] = flippy.tpl.php
 files[] = flippy.install
 files[] = flippy.module
 
-; Information added by drupal.org packaging script on 2013-07-26
-version = "7.x-1.2"
+; Information added by Drupal.org packaging script on 2014-03-19
+version = "7.x-1.3"
 core = "7.x"
 project = "flippy"
-datestamp = "1374797467"
+datestamp = "1395200058"
 
